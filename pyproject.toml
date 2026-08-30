@@ -1,0 +1,22 @@
+[project]
+name = "diagnostic-engine"
+version = "2.2.0"
+description = "Deterministic financial variance diagnostic engine"
+requires-python = ">=3.12"
+dependencies = [
+    "pandas>=2.2.0",
+    "numpy>=1.26.0",
+]
+
+[project.optional-dependencies]
+dev = [
+    "pytest>=8.0.0",
+]
+
+[build-system]
+requires = ["setuptools>=61.0.0"]
+build-backend = "setuptools.build_meta"
+
+[tool.pytest.ini_options]
+testpaths = ["tests"]
+python_files = ["test_*.py"]

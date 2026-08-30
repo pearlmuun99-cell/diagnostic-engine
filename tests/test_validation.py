@@ -3,7 +3,7 @@ import pytest
 
 # Assuming your module is named input_validator.py
 # Adjust import path as needed
-from diagnostic_engine.validation import validate_and_coerce_input
+from diagnostic-engine.validation import validate_and_coerce_input
 
 
 @pytest.fixture
